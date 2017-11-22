@@ -16,6 +16,8 @@
     "mocha": true
   },
   "rules": {
-    "no-console": 1
+    "no-console": 1,
+    "angular/file-name": 0,
+    "angular/function-type": 1
   }
 }
