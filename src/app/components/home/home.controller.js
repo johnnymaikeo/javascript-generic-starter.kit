@@ -1,8 +1,8 @@
 export class HomeController {
-  constructor(DataFactory) {
+  constructor(api) {
     this.message = 'Hello from HomeController()';
-    console.log(DataFactory.test());
+    console.log(api.test());
   }
 }
 
-HomeController.$inject = ['DataFactory'];
+HomeController.$inject = ['ApiService'];
