@@ -19,10 +19,6 @@ export class ApiService {
   remove(path, config) {
     return this.$http.delete(this.baseUrl + path, config).then(r => r.data);
   }
-
-  test() {
-    return 'some data';
-  }
 }
 
 ApiService.$inject = ['$http'];
