@@ -23,6 +23,7 @@ export default {
   ],
   module: {
     loaders: [
+      {test: /\.html$/, loader: 'raw-loader'},
       {test: /\.js$/, exclude: /node_modules/, loaders: ['babel']},
       {test: /\.css$/, loaders: ['style', 'css']}
     ]
